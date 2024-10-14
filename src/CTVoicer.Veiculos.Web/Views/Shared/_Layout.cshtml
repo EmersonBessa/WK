@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WK Produtos</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <link href="~/layout/Content/animate.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Scripts/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/blueimp/css/blueimp-gallery.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/morris/morris-0.4.3.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/iCheck/custom.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/dataTables/datatables.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/jqGrid/ui.jqgrid.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/codemirror/codemirror.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/codemirror/ambiance.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/nouslider/jquery.nouislider.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/switchery/switchery.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/steps/jquery.steps.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/dropzone/basic.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/summernote/summernote.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/summernote/summernote-bs3.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/toastr/toastr.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/cropper/cropper.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/jsTree/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/chartist/chartist.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/clockpicker/clockpicker.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/footable/footable.core.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/select2/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/slick/slick.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/slick/slick-theme.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/ladda/ladda-themeless.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Scripts/plugins/touchspin/jquery.bootstrap-touchspin.min.js" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/bootstrapTour/bootstrap-tour.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/c3/c3.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/bootstrap-markdown/bootstrap-markdown.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/bootstrapSocial/bootstrap-social.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/textSpinners/spinners.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/bootstrap-multiselect-master/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />
+    <link href="~/layout/Content/plugins/BootStrap-Fileinput/css/fileinput.css" rel="stylesheet" />
+
+    <!-- FIM CSS -->
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Produtos</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+
+@*                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Veiculo" asp-action="Index">Veiculos</a>
+                        </li> *@
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Prod" asp-action="Index">Produtos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Cat" asp-action="Index">Categorias</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - WK.Produtos.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script src="~/layout/Scripts/plugins/bootstrap-table/bootstrap-table.js"></script>
+    <script src="~/layout/Scripts/plugins/bootstrap-table/locale/bootstrap-table-pt-BR.js"></script>
+    <script src="~/layout/Scripts/plugins/bootstrap-table/extensions/export/bootstrap-table-export.js"></script>
+    <script src="~/layout/Scripts/plugins/InputMask/dist/jquery.inputmask.bundle.js"></script>
+    <script src="~/layout/Scripts/plugins/formatter/formatter.min.js"></script>
+    <script src="~/layout/Scripts/plugins/formatter/jquery.formatter.min.js"></script>
+    <script src="~/layout/Scripts/AppScripts/util.js"></script>
+    <script src="~/layout/Scripts/AppScripts/DropDowns.js"></script>
+    <script src="~/layout/Scripts/AppScripts/alerts.js"></script>
+    <script src="~/layout/Content/plugins/BootStrap-Fileinput/js/fileinput.js"></script>
+    <script src="~/layout/Content/plugins/BootStrap-Fileinput/js/fileinput_locale_pt-BR.js"></script>
+    <script src="~/layout/Scripts/plugins/bootstrap-multiselect-master/js/bootstrap-multiselect.js"></script>
+    <script src="~/layout/Scripts/plugins/sweetalert/sweetalert.min.js"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

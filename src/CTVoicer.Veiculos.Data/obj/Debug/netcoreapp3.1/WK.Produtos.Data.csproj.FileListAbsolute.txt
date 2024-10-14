@@ -1,0 +1,15 @@
+C:\Git\CTVoicer-master\src\CTVoicer.Veiculos.Data\obj\Debug\netcoreapp3.1\WK.Produtos.Data.csproj.AssemblyReference.cache
+C:\Git\CTVoicer-master\src\CTVoicer.Veiculos.Data\obj\Debug\netcoreapp3.1\WK.Produtos.Data.AssemblyInfoInputs.cache
+C:\Git\CTVoicer-master\src\CTVoicer.Veiculos.Data\obj\Debug\netcoreapp3.1\WK.Produtos.Data.AssemblyInfo.cs
+C:\Git\CTVoicer-master\src\CTVoicer.Veiculos.Data\obj\Debug\netcoreapp3.1\WK.Produtos.Data.csproj.CoreCompileInputs.cache
+C:\Git\CTVoicer-master\src\CTVoicer.Veiculos.Data\bin\Debug\netcoreapp3.1\WK.Produtos.Data.deps.json
+C:\Git\CTVoicer-master\src\CTVoicer.Veiculos.Data\bin\Debug\netcoreapp3.1\WK.Produtos.Data.runtimeconfig.json
+C:\Git\CTVoicer-master\src\CTVoicer.Veiculos.Data\bin\Debug\netcoreapp3.1\WK.Produtos.Data.runtimeconfig.dev.json
+C:\Git\CTVoicer-master\src\CTVoicer.Veiculos.Data\bin\Debug\netcoreapp3.1\WK.Produtos.Data.dll
+C:\Git\CTVoicer-master\src\CTVoicer.Veiculos.Data\bin\Debug\netcoreapp3.1\WK.Produtos.Data.pdb
+C:\Git\CTVoicer-master\src\CTVoicer.Veiculos.Data\bin\Debug\netcoreapp3.1\WK.Produtos.Bussiness.dll
+C:\Git\CTVoicer-master\src\CTVoicer.Veiculos.Data\bin\Debug\netcoreapp3.1\WK.Produtos.Bussiness.pdb
+C:\Git\CTVoicer-master\src\CTVoicer.Veiculos.Data\obj\Debug\netcoreapp3.1\WK.Produtos.Data.dll
+C:\Git\CTVoicer-master\src\CTVoicer.Veiculos.Data\obj\Debug\netcoreapp3.1\WK.Produtos.Data.pdb
+C:\Git\CTVoicer-master\src\CTVoicer.Veiculos.Data\obj\Debug\netcoreapp3.1\WK.Produtos.Data.genruntimeconfig.cache
+C:\Git\CTVoicer-master\src\CTVoicer.Veiculos.Data\obj\Debug\netcoreapp3.1\WK.Produtos.Data.csproj.CopyComplete

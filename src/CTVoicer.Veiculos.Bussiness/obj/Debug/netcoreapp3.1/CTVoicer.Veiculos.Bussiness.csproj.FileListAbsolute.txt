@@ -1,0 +1,9 @@
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Bussiness\bin\Debug\netcoreapp3.1\CTVoicer.Veiculos.Bussiness.deps.json
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Bussiness\bin\Debug\netcoreapp3.1\CTVoicer.Veiculos.Bussiness.dll
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Bussiness\bin\Debug\netcoreapp3.1\CTVoicer.Veiculos.Bussiness.pdb
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Bussiness\obj\Debug\netcoreapp3.1\CTVoicer.Veiculos.Bussiness.csprojAssemblyReference.cache
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Bussiness\obj\Debug\netcoreapp3.1\CTVoicer.Veiculos.Bussiness.AssemblyInfoInputs.cache
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Bussiness\obj\Debug\netcoreapp3.1\CTVoicer.Veiculos.Bussiness.AssemblyInfo.cs
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Bussiness\obj\Debug\netcoreapp3.1\CTVoicer.Veiculos.Bussiness.csproj.CoreCompileInputs.cache
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Bussiness\obj\Debug\netcoreapp3.1\CTVoicer.Veiculos.Bussiness.dll
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Bussiness\obj\Debug\netcoreapp3.1\CTVoicer.Veiculos.Bussiness.pdb

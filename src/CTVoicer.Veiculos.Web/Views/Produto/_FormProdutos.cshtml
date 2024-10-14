@@ -1,0 +1,34 @@
+﻿<div class="modal fade" id="modalNovo" tabindex=" -1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body gray-bg">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h3>Cadastro de Produtos</h3>
+                    </div>
+                    <div class="ibox-content">
+                        <input type="hidden" id="Id" class="form-control" />
+                        <input type="hidden" id="Operacao" class="form-control" />
+                        <div class="row">
+                            <div class="col-md-8">
+                                <label>Nome</label>
+                                <input type="text" class="form-control" id="Nome" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label>Categoria</label>
+                                <select id="CategoriaId" class="form-control"></select>
+                                <input type="hidden" id="CategoriaIdTemp" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer ">
+                <button type="button" class="btn btn-success" id="btn-salvar"> Salvar </button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</div>

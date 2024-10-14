@@ -1,0 +1,15 @@
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Data\bin\Debug\netcoreapp3.1\CTVoicer.Veiculos.Data.deps.json
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Data\bin\Debug\netcoreapp3.1\CTVoicer.Veiculos.Data.runtimeconfig.json
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Data\bin\Debug\netcoreapp3.1\CTVoicer.Veiculos.Data.runtimeconfig.dev.json
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Data\bin\Debug\netcoreapp3.1\CTVoicer.Veiculos.Data.dll
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Data\bin\Debug\netcoreapp3.1\CTVoicer.Veiculos.Data.pdb
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Data\bin\Debug\netcoreapp3.1\CTVoicer.Veiculos.Bussiness.dll
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Data\bin\Debug\netcoreapp3.1\CTVoicer.Veiculos.Bussiness.pdb
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Data\obj\Debug\netcoreapp3.1\CTVoicer.Veiculos.Data.csprojAssemblyReference.cache
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Data\obj\Debug\netcoreapp3.1\CTVoicer.Veiculos.Data.AssemblyInfoInputs.cache
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Data\obj\Debug\netcoreapp3.1\CTVoicer.Veiculos.Data.AssemblyInfo.cs
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Data\obj\Debug\netcoreapp3.1\CTVoicer.Veiculos.Data.csproj.CoreCompileInputs.cache
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Data\obj\Debug\netcoreapp3.1\CTVoicer.Veiculos.Data.csproj.CopyComplete
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Data\obj\Debug\netcoreapp3.1\CTVoicer.Veiculos.Data.dll
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Data\obj\Debug\netcoreapp3.1\CTVoicer.Veiculos.Data.pdb
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.Data\obj\Debug\netcoreapp3.1\CTVoicer.Veiculos.Data.genruntimeconfig.cache

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ESlCEfEfNbyj6j0JQsl9tltNM7NhbNxrlNmsPSPJj/qu8W2NuTv8qXM7wvugnzpQAIUd1nJJyB/YZx4bhcR3/A==",
+  "success": true,
+  "projectFilePath": "C:\\Git\\CTVoicer-master\\src\\CTVoicer.Veiculos.Bussiness\\WK.Produtos.Bussiness.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\emers\\.nuget\\packages\\fluentvalidation\\10.2.3\\fluentvalidation.10.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

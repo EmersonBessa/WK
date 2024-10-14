@@ -1,0 +1,184 @@
+﻿@model IEnumerable<WK.Produtos.Web.ViewModels.ProdutoViewModel>
+
+@{
+    ViewData["Title"] = "Produto";
+}
+
+<div id="toolbar" class="btn-group">
+    <button type="button" class="btn btn-primary" id="btnNovo" data-toggle="modal" data-target="#modalNovo">
+        Nova Produto
+    </button>
+</div>
+
+<table id="table"
+       data-toggle="table"
+       data-url='@Url.Action("ObterGrid", "Prod")'
+       data-method="get"
+       data-click-to-select="true"
+       data-single-select="false"
+       data-search="true"
+       data-show-refresh="true"
+       data-query-params="parametrosListagem"
+       data-pagination="true"
+       data-page-list="[5, 10, 20, 50]"
+       data-side-pagination="server"
+       data-toolbar="#toolbar"
+       data-detail-view="true"
+       data-sort-name="p.nome"
+       data-sort-order="Desc"
+       data-cookie="true"
+       data-cookie-id-table="table"
+       data-striped="true"
+       data-show-export="true"
+       data-show-toggle="true"
+       data-show-columns="true"
+       data-row-style="rowStyle">
+    <thead>
+        <tr>
+            <th data-field="id" data-sortable="true" data-width="50" data-align="center" >id</th>
+            <th data-field="nome" data-sortable="true" data-width="50" data-align="center">Nome</th>
+            <th data-field="categoria.nome" data-sortable="true" data-width="50" data-align="center">Categoria</th>
+            <th data-field="operacao" data-align="center" data-width="300" data-formatter="formatadorColunaOperacao" data-events="operacoesColunasTabelaPrincipal">Operações</th>
+        </tr>
+    </thead>
+</table>
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "__AjaxAntiForgeryForm" }))
+{
+    @Html.AntiForgeryToken()
+    <partial name="_formProdutos.cshtml" />
+}
+
+
+@section scripts {
+    <script>
+        function parametrosListagem(p) {
+            if (undefined == p.sort) p.sort = 'p.nome';
+            if (p.sort == "nome") p.sort = 'p.nome';
+            if (p.sort == "categoria.nome") p.sort = 'c.nome';
+            return {
+                ordenacaoCampo: p.sort,
+                ordenacaoDirecao: p.order,
+                quantidadePagina: p.limit,
+                paginaAtual: (p.offset / p.limit) + 1,
+                pesquisa: p.search,
+            };
+        }
+
+        window.operacoesColunasTabelaPrincipal = tratadorEventoColunas();
+
+        function formatadorColunaOperacao(value, row, index) {
+
+            var operacoes = [];
+            var operacao_editar =
+                '<a class="operacao_editar"   href="javascript:void(0)" title="Editar " >Editar</a>';
+            var operacao_excluir =
+                '<a class="operacao_excluir" href="javascript:void(0)" title="Excluir">Excluir</a>';
+
+            operacoes.push(operacao_editar);
+            operacoes.push(operacao_excluir);
+
+            return operacoes.join(' ');
+        }
+
+        function tratadorEventoColunas() {
+            return {
+                'click .operacao_excluir': function (e, value, row, index) {
+
+                    $.alertaExcluir(
+                        {
+                            Texto: "Deseja excluir o Produto selecionada? Esta ação não poderá ser revertida.",
+                            Url: '@Url.Action("DeleteConfirmed", "Prod")',
+                            Dados: [row.id],
+                            Tabela: '#table'
+                        }
+                    );
+
+                    e.stopPropagation();
+                },
+
+                'click .operacao_editar': function (e, value, row, index) {
+                    //alert(row.id);
+                    $.ajax({
+                        url: '@Url.Action("Obter", "Prod")',
+                        type: 'POST',
+                        dataType: 'json',
+                        data: { id: [row.id] },
+                        
+                        success: function (data) {
+                            $("#Id").val(data.id);
+                            $("#Nome").val(data.nome);
+                            $("#CategoriaIdTemp").val(data.categoriaId);
+                            $("#Operacao").val("update");
+                            $('#modalNovo').modal({ show: true });
+                        }
+                    });
+
+                    e.stopPropagation();
+                },
+
+            };
+        }
+
+        function CarregarDropDownCategorias() {
+            $.CarregarDropDown(
+                {
+                    Url: '@Url.Action("ObterTodas", "Categoria")',
+                    TextoVazio: '',
+                    EditTemp: "#CategoriaIdTemp",
+                    DropDownId: "#CategoriaId",
+                }
+            );
+        }
+
+        $('#modalNovo').on('show.bs.modal', function (e) {
+
+            CarregarDropDownCategorias();
+            // CarregarDropDownCores();
+
+        });
+
+
+        $("#btn-salvar").on('click', function () {
+            var token = $("#__AjaxAntiForgeryForm input").val();
+            var dataObject = {
+                __RequestVerificationToken: token,
+                produtoViewModel: ObterDados(),
+                operacao: $("#Operacao").val()
+            };
+
+            $.alertaSalvar({
+                Texto: 'Deseja salvar este Produto?',
+                Dados: dataObject,
+                Url: '@Url.Action("Create", "Prod")',
+                Tabela: '#table',
+                MensagemSucesso: 'Produto salvo com sucesso!!!',
+                Modal: '#modalNovo'
+            });
+        });
+
+        function ObterDados() {
+            var id = $("#Id").val();
+            var nome = $("#Nome").val();
+            var categoriaId = $("#CategoriaId").val();
+            return {
+                Id: id,
+                Nome: nome,
+                categoriaId: categoriaId
+            };
+        }
+
+        function LimparFormulario() {
+            $('input[id=Operacao]').val("");
+            $("#Id").val("");
+            $("#Nome").val("");
+            $("#CategoriaId").val("");
+        }
+
+        //Limpar Formulario quando clicar no Botao Novo
+        $("#btnNovo").on('click', function () {
+            LimparFormulario();
+        });
+
+    </script>
+}

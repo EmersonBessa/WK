@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CTVoicer.Veiculos.Bussiness\WK.Produtos.Bussiness.csproj" />
+    <ProjectReference Include="..\CTVoicer.Veiculos.Data\WK.Produtos.Data.csproj" />
+  </ItemGroup>
+
+</Project>

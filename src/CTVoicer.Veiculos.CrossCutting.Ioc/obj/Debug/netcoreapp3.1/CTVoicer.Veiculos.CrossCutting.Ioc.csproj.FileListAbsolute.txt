@@ -1,0 +1,14 @@
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.CrossCutting.Ioc\bin\Debug\netcoreapp3.1\CTVoicer.Veiculos.CrossCutting.Ioc.deps.json
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.CrossCutting.Ioc\bin\Debug\netcoreapp3.1\CTVoicer.Veiculos.CrossCutting.Ioc.dll
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.CrossCutting.Ioc\bin\Debug\netcoreapp3.1\CTVoicer.Veiculos.CrossCutting.Ioc.pdb
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.CrossCutting.Ioc\bin\Debug\netcoreapp3.1\CTVoicer.Veiculos.Bussiness.dll
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.CrossCutting.Ioc\bin\Debug\netcoreapp3.1\CTVoicer.Veiculos.Data.dll
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.CrossCutting.Ioc\bin\Debug\netcoreapp3.1\CTVoicer.Veiculos.Bussiness.pdb
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.CrossCutting.Ioc\bin\Debug\netcoreapp3.1\CTVoicer.Veiculos.Data.pdb
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.CrossCutting.Ioc\obj\Debug\netcoreapp3.1\CTVoicer.Veiculos.CrossCutting.Ioc.csprojAssemblyReference.cache
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.CrossCutting.Ioc\obj\Debug\netcoreapp3.1\CTVoicer.Veiculos.CrossCutting.Ioc.AssemblyInfoInputs.cache
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.CrossCutting.Ioc\obj\Debug\netcoreapp3.1\CTVoicer.Veiculos.CrossCutting.Ioc.AssemblyInfo.cs
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.CrossCutting.Ioc\obj\Debug\netcoreapp3.1\CTVoicer.Veiculos.CrossCutting.Ioc.csproj.CoreCompileInputs.cache
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.CrossCutting.Ioc\obj\Debug\netcoreapp3.1\CTVoicer.Veiculos.CrossCutting.Ioc.csproj.CopyComplete
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.CrossCutting.Ioc\obj\Debug\netcoreapp3.1\CTVoicer.Veiculos.CrossCutting.Ioc.dll
+C:\git\CtVoicer\CTVoicer\src\CTVoicer.Veiculos.CrossCutting.Ioc\obj\Debug\netcoreapp3.1\CTVoicer.Veiculos.CrossCutting.Ioc.pdb
